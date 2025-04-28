@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <nav>
+        <div class="wrapper">
+            <div class="logo"><a href="{{ url_for('homepage') }}">Fahri</a></div>
+            <div class="menu">
+                <ul>
+                    <li><a href="{{ url_for('homepage') }}">Homepage</a></li>
+                    <li><a href="{{ url_for('profile') }}">Profile</a></li>
+                    <li><a href="{{ url_for('project') }}">Project</a></li>
+                    <li><a href="{{ url_for('contacts') }}">Contacts</a></li>                   
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="profile">
+        <img src="{{ url_for('static', filename='images/DSC06453~2.JPG') }}">
+        <div class="text">
+            <h1>Welcome to My Profile!</h1>
+            <h2>Halo! Saya Tsaqif Akhirul Fakhri</h2>
+            <p>Seorang Mahasiswa semester dua Teknik Elektro Universitas 
+            Padjadjaran. Saya memiliki minat terhadap pengembangan sebuah website.</p>
+        </div>
+    </div>
+    <div class="pendidikan">
+        <h1>Riwayat Pendidikan</h1>
+        <div class="highschool">
+            <h2>SMA</h2>
+            <h3>2021-2024</h3>
+            <p>SMA Negeri 2 Purbalingga</p>
+        </div>
+        <div class="College">
+            <h2>Perguruan Tinggi</h2>
+            <h3>2024-sekarang</h3>
+            <p>Universitas Padjadjaran</p>
+        </div>
+    </div>
+    <div class="minat-keahlian">
+        <h1>Minat dan Keahlian</h1>
+        <img src="https://img.freepik.com/free-vector/hackathon-doodle-set-hand-drawn-icons-collection-programming-brainstorm-generation-ideas-deve_88138-1343.jpg?t=st=1745714879~exp=1745718479~hmac=ac6cdf44cd6c28debe83b8e0fdbae3c281b57ee6584ad5729d884ccd612cc779&w=1380"/>
+        <div class="Minat">
+            <p>Mengikuti perkembangan zaman, dunia seolah berputar mengikuti arus perkembangan teknologi. Bagi saya, desain bukan hanya tentang membuat sesuatu yang terlihat indah, tetapi juga tentang menciptakan pengalaman. Setiap warna, bentuk, dan interaksi di layar memiliki tujuan membuat hidup orang lebih mudah, nyaman, dan bermakna. Karena itu, saya belajar untuk melihat desain dari perspektif pengguna, bukan hanya dari sisi estetika. <br> <br>     Di sisi lain, pengembangan teknologi mengajarkan saya tentang ketelitian dan inovasi. Betapa menariknya mengetahui bahwa di balik tampilan sederhana sebuah aplikasi, terdapat ribuan baris kode dan ide-ide kreatif yang dirangkai. Dunia ini dinamis, selalu ada hal baru yang bisa dipelajari, dari web development, <i>artificial intelligence</i>, hingga <i>Internet of Things</i>. Setiap inovasi terasa seperti pintu baru yang membawa saya lebih dekat dengan masa depan.</p> <br>
+            <p1>Seiring dengan perjalanan tersebut, saya mulai mendalami penggunaan Figma, yaitu platform desain kolaboratif yang telah menjadi andalan banyak desainer profesional. Melalui Figma, saya belajar merancang antarmuka yang tidak hanya menarik secara visual, tetapi juga mempertimbangkan aspek fungsionalitas dan pengalaman pengguna (<i>user experience</i>). Setiap proyek desain menjadi kesempatan untuk terus mengasah rasa estetika sekaligus memahami kebutuhan pengguna.<br> <br>Namun, saya juga sadar bahwa desain yang hebat saja tidak cukup. Untuk benar-benar menghidupkan ide-ide tersebut, saya harus memahami bagaimana produk itu dibangun. Oleh karena itu, saya berkomitmen untuk terus belajar pemrograman. Saya menginvestasikan waktu untuk mempelajari HTML, CSS, JavaScript, dan teknologi lain yang mendukung pengembangan web dan aplikasi.</p1>
+        </div> 
+    </div>
+</body>
+</html>

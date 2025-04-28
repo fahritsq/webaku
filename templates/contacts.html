@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacts</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <nav>
+        <div class="wrapper">
+            <div class="logo"><a href="{{ url_for('homepage') }}">Fahri</a></div>
+            <div class="menu">
+                <ul>
+                    <li><a href="{{ url_for('homepage') }}">Homepage</a></li>
+                    <li><a href="{{ url_for('profile') }}">Profile</a></li>
+                    <li><a href="{{ url_for('project') }}">Project</a></li>
+                    <li><a href="{{ url_for('contacts') }}">Contacts</a></li>                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="contact">
+        <h1>Hubungi saya melalui:</h1>
+        <div class="kontak-menu">
+            <div class="line">
+                <a href="https://line.me/ti/p/F2aROtK4lp"><img src="{{ url_for('static', filename='images/line logo.png') }}"></a>
+            </div>
+            <div class="instagram">
+                <a href="https://www.instagram.com/tsaqifahrii?igsh=MWFmandpdjlkajU2dw=="><img src="{{ url_for('static', filename='images/instagram logo.png') }}"></a>
+            </div>
+            <div class="linkedin">
+                <a href="https://www.linkedin.com/in/tsaqifakhirulfakhri?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><img src="{{ url_for('static', filename='images/linkedin logo.png') }}"></a>            
+            </div>
+            <div class="email">
+                <a href="mailto:tsaqifakhhirul06@gmail.com"><img src="{{ url_for('static', filename='images/email logo.png') }}"></a>            
+            </div>
+        </div>
+        <p>Line &nbsp;: @fahritsq <br>
+        Instagram &nbsp;: @tsaqifahrii <br>
+        Linkedin &nbsp;: Tsaqif Akhirul Fakhri <br>
+        E-mail &nbsp;: tsaqifakhirul06@gmail.com</p>
+    </div>
+</body>
+</html>
